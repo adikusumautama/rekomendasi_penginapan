@@ -5,6 +5,7 @@ import 'splashScreen.dart';
 
 import 'areaBanyumas.dart';
 import 'areaCilacap.dart';
+import 'areaBanjarnegara.dart';
 
 
 void main() => runApp(MyApp());
@@ -405,10 +406,175 @@ class BanjarnegaraPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Halaman Banjarnegara'),
+        title: Text('Banjarnegara Page'),
       ),
-      body: Center(
-        child: Text('Ini adalah halaman Banjarnegara'),
+      body: Padding(
+        padding: EdgeInsets.all(15.0),
+        child: ListView(
+          children: [
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DaerahBanjarnegaraPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Banjarnegara',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PurwanegaraPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Purwanegara',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Banjarmangu(),
+                  ),
+                );
+              },
+              child: Text(
+                'Banjarmangu',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BaturPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Batur',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => KalibeningPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Kalibening',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MandirajaPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Mandiraja',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => WanayasaPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Wanayasa',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -623,18 +789,6 @@ class PurbalinggaPage extends StatelessWidget {
     );
   }
 }
-
-
-// ------------------------------------------ BANYUMAS -------------------------------------------------
-
-
-
-// ------------------------------------------ CILACAP --------------------------------------------------
-
-
-
-// ---------------------------------------- BANJARNEGARA -----------------------------------------------
-
 
 
 // 
