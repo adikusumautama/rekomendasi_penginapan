@@ -810,7 +810,7 @@ class AjibarangPage extends StatefulWidget {
   _AjibarangPageState createState() => _AjibarangPageState();
 }
 
-class _AjibarangPageState extends State<CilongokPage> {
+class _AjibarangPageState extends State<AjibarangPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
         namaHotel: 'Hotel Cilongok',
