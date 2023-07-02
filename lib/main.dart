@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rekomendasi_penginapan/areaKebumen.dart';
+import 'package:rekomendasi_penginapan/areaPurbalingga.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:async';
 import 'splashScreen.dart';
@@ -6,7 +8,6 @@ import 'splashScreen.dart';
 import 'areaBanyumas.dart';
 import 'areaCilacap.dart';
 import 'areaBanjarnegara.dart';
-
 
 void main() => runApp(MyApp());
 
@@ -220,6 +221,7 @@ class HomePage extends StatelessWidget {
 }
 
 // ----------------------------- LIST AREA ---------------------------------
+
 // -------------------------------------------------------------------------
 class BanyumasPage extends StatelessWidget {
   @override
@@ -581,6 +583,140 @@ class BanjarnegaraPage extends StatelessWidget {
 }
 
 // -------------------------------------------------------------------------
+class KebumenPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Kebumen Page'),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(15.0),
+        child: ListView(
+          children: [
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DaerahKebumenPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Daerah Kebumen',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GombongPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Gombong',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => KaranganyarPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Karanganyar',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => KarangsambungPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Karangsambung',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => KutowinangunPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Kutowinangun',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// -------------------------------------------------------------------------
 class CilacapPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -592,6 +728,29 @@ class CilacapPage extends StatelessWidget {
         padding: EdgeInsets.all(15.0),
         child: ListView(
           children: [
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DaerahCilacapPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Cilacap',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
             SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
@@ -730,18 +889,129 @@ class CilacapPage extends StatelessWidget {
                 ),
               ),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// -------------------------------------------------------------------------
+class PurbalinggaPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cilacap Page'),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(15.0),
+        child: ListView(
+          children: [
             SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DaerahCilacapPage(),
+                    builder: (context) => DaerahPurbalinggaPage(),
                   ),
                 );
               },
               child: Text(
-                'Cilacap',
+                'Purbalingga Kota',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BojongsariPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Bojongsari',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => KarangrejaPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Karangreja',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BukatejaPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Bukateja',
+                style: TextStyle(fontSize: 18.0),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(15.0),
+                primary: Color.fromARGB(255, 229, 229, 229),
+                onPrimary: Colors.indigo,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => KaligondangPage(),
+                  ),
+                );
+              },
+              child: Text(
+                'Kaligondang',
                 style: TextStyle(fontSize: 18.0),
               ),
               style: ElevatedButton.styleFrom(
@@ -760,38 +1030,7 @@ class CilacapPage extends StatelessWidget {
   }
 }
 
-// -------------------------------------------------------------------------
-class KebumenPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Halaman Kebumen'),
-      ),
-      body: Center(
-        child: Text('Ini adalah halaman Kebumen'),
-      ),
-    );
-  }
-}
-
-// -------------------------------------------------------------------------
-class PurbalinggaPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Halaman Purbalingga'),
-      ),
-      body: Center(
-        child: Text('Ini adalah halaman Purbalingga'),
-      ),
-    );
-  }
-}
-
-
-// 
+//
 class Deklarasi {
   String namaHotel;
   String deskripsi;
