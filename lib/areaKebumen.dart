@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 
 import 'main.dart';
 
-// - DaerahPurbalingga -----------------------------------------------------------------------------------------
-class DaerahPurbalinggaPage extends StatefulWidget {
+// - DaerahKebumen -----------------------------------------------------------------------------------------
+class DaerahKebumenPage extends StatefulWidget {
+
   @override
-  _DaerahPurbalinggaPageState createState() => _DaerahPurbalinggaPageState();
+  _DaerahKebumenPageState createState() => _DaerahKebumenPageState();
 }
 
-class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
+class _DaerahKebumenPageState extends State<DaerahKebumenPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -22,11 +24,13 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -36,11 +40,13 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -50,11 +56,13 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -64,11 +72,13 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -78,11 +88,13 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -92,7 +104,8 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
   ];
 
@@ -100,7 +113,7 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SIDAREJA'),
+        title: Text('KEBUMEN'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -109,7 +122,7 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA PURBALINGGA',
+                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA KEBUMEN',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
@@ -157,17 +170,19 @@ class _DaerahPurbalinggaPageState extends State<DaerahPurbalinggaPage> {
   }
 }
 
-// - Bojongsari -----------------------------------------------------------------------------------------
-class BojongsariPage extends StatefulWidget {
+// - Gombong -----------------------------------------------------------------------------------------
+class GombongPage extends StatefulWidget {
+
   @override
-  _BojongsariPageState createState() => _BojongsariPageState();
+  _GombongPageState createState() => _GombongPageState();
 }
 
-class _BojongsariPageState extends State<BojongsariPage> {
+class _GombongPageState extends State<GombongPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -177,11 +192,13 @@ class _BojongsariPageState extends State<BojongsariPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -191,11 +208,13 @@ class _BojongsariPageState extends State<BojongsariPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -205,11 +224,13 @@ class _BojongsariPageState extends State<BojongsariPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -219,11 +240,13 @@ class _BojongsariPageState extends State<BojongsariPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -233,11 +256,13 @@ class _BojongsariPageState extends State<BojongsariPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -247,7 +272,8 @@ class _BojongsariPageState extends State<BojongsariPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
   ];
 
@@ -255,7 +281,7 @@ class _BojongsariPageState extends State<BojongsariPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BOJONGSARI'),
+        title: Text('GOMBONG'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -264,7 +290,7 @@ class _BojongsariPageState extends State<BojongsariPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA BOJONGSARI',
+                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA GOMBONG',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
@@ -312,17 +338,19 @@ class _BojongsariPageState extends State<BojongsariPage> {
   }
 }
 
-// - Karangreja -----------------------------------------------------------------------------------------
-class KarangrejaPage extends StatefulWidget {
+// - Karanganyar -----------------------------------------------------------------------------------------
+class KaranganyarPage extends StatefulWidget {
+
   @override
-  _KarangrejaPageState createState() => _KarangrejaPageState();
+  _KaranganyarPageState createState() => _KaranganyarPageState();
 }
 
-class _KarangrejaPageState extends State<KarangrejaPage> {
+class _KaranganyarPageState extends State<KaranganyarPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -332,11 +360,13 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -346,11 +376,13 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -360,11 +392,13 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -374,11 +408,13 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -388,11 +424,13 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -402,7 +440,8 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
   ];
 
@@ -410,7 +449,7 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('KARANGREJA'),
+        title: Text('KARANGANYAR'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -419,7 +458,7 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA KARANGREJA',
+                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA KARANGANYAR',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
@@ -467,17 +506,19 @@ class _KarangrejaPageState extends State<KarangrejaPage> {
   }
 }
 
-// - Bukateja -----------------------------------------------------------------------------------------
-class BukatejaPage extends StatefulWidget {
+// - Karangsambung -----------------------------------------------------------------------------------------
+class KarangsambungPage extends StatefulWidget {
+
   @override
-  _BukatejaPageState createState() => _BukatejaPageState();
+  _KarangsambungPageState createState() => _KarangsambungPageState();
 }
 
-class _BukatejaPageState extends State<BukatejaPage> {
+class _KarangsambungPageState extends State<KarangsambungPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -487,11 +528,13 @@ class _BukatejaPageState extends State<BukatejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -501,11 +544,13 @@ class _BukatejaPageState extends State<BukatejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -515,11 +560,13 @@ class _BukatejaPageState extends State<BukatejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -529,11 +576,13 @@ class _BukatejaPageState extends State<BukatejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -543,11 +592,13 @@ class _BukatejaPageState extends State<BukatejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -557,7 +608,8 @@ class _BukatejaPageState extends State<BukatejaPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
   ];
 
@@ -565,7 +617,7 @@ class _BukatejaPageState extends State<BukatejaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BUKATEJA'),
+        title: Text('KARANGSAMBUNG'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -574,7 +626,7 @@ class _BukatejaPageState extends State<BukatejaPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA BUKATEJA',
+                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA KARANGSAMBUNG',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
@@ -622,17 +674,19 @@ class _BukatejaPageState extends State<BukatejaPage> {
   }
 }
 
-// - Kaligondang -----------------------------------------------------------------------------------------
-class KaligondangPage extends StatefulWidget {
+// - Kutowinangun -----------------------------------------------------------------------------------------
+class KutowinangunPage extends StatefulWidget {
+
   @override
-  _KaligondangPageState createState() => _KaligondangPageState();
+  _KutowinangunPageState createState() => _KutowinangunPageState();
 }
 
-class _KaligondangPageState extends State<KaligondangPage> {
+class _KutowinangunPageState extends State<KutowinangunPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -642,11 +696,13 @@ class _KaligondangPageState extends State<KaligondangPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -656,11 +712,13 @@ class _KaligondangPageState extends State<KaligondangPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -670,11 +728,13 @@ class _KaligondangPageState extends State<KaligondangPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -684,11 +744,13 @@ class _KaligondangPageState extends State<KaligondangPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -698,11 +760,13 @@ class _KaligondangPageState extends State<KaligondangPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
     Deklarasi(
         namaHotel: '-',
-        deskripsi: '-',
+        deskripsi:
+            '-',
         fasilitas1: '-',
         fasilitas2: '-',
         fasilitas3: '-',
@@ -712,7 +776,8 @@ class _KaligondangPageState extends State<KaligondangPage> {
         harga: 'IDR -,-',
         image: '-',
         rating: '-',
-        alamat: '-',
+        alamat:
+            '-',
         link: '-'),
   ];
 
@@ -720,7 +785,7 @@ class _KaligondangPageState extends State<KaligondangPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('KALIGONDANG'),
+        title: Text('KUTOWINANGUN'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -729,7 +794,7 @@ class _KaligondangPageState extends State<KaligondangPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA KALIGONDANG',
+                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA KUTOWINANGUN',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
