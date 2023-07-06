@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'main.dart';
 
-// - Purwokerto ----------------------------------------------------------------------------------------
+// - Purwokerto --DONE--------------------------------------------------------------------------------------
 class PurwokertoPage extends StatefulWidget {
   @override
   _PurwokertoPageState createState() => _PurwokertoPageState();
@@ -195,7 +195,7 @@ class _PurwokertoPageState extends State<PurwokertoPage> {
   }
 }
 
-// - Kebasen -------------------------------------------------------------------------------------------
+// - Kebasen --DONE!-----------------------------------------------------------------------------------------
 class KebasenPage extends StatefulWidget {
   @override
   _KebasenPageState createState() => _KebasenPageState();
@@ -336,7 +336,7 @@ class _KebasenPageState extends State<KebasenPage> {
   }
 }
 
-// - Baturaden -----------------------------------------------------------------------------------------
+// - Baturaden --DONE!---------------------------------------------------------------------------------------
 class BaturadenPage extends StatefulWidget {
   @override
   _BaturadenPageState createState() => _BaturadenPageState();
@@ -507,240 +507,89 @@ class CilongokPage extends StatefulWidget {
 class _CilongokPageState extends State<CilongokPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
-        namaHotel: 'Hotel Cilongok',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini merupakan hotel bintang 1 yang menyediakan kamar-kamar yang sederhana dan terjangkau dengan fasilitas AC atau kipas angin, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi atau bersama dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran dan parkir gratis.',
-        fasilitas1: 'Parkir Gratis',
-        fasilitas2: 'Wi-Fi Gratis',
-        fasilitas3: 'Restoran',
-        fasilitas4: 'Kamar Mandi Pribadi',
-        fasilitas5: 'Kolam Renang',
-        harga: 'IDR 100.000,-',
-        rating: '3.5/5',
-        alamat: 'Jl. Raya Cilongok No. 1, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6',
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
         image: ''),
     Deklarasi(
-        namaHotel: 'Hotel Permata',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini adalah hotel bintang 2 yang menawarkan kamar-kamar yang nyaman dan bersih dengan fasilitas AC, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'AC',
-        fasilitas2: 'Wi-Fi Gratis',
-        fasilitas3: 'Kamar Mandi Pribadi',
-        fasilitas4: 'Restoran',
-        fasilitas5: 'Meeting Room',
-        fasilitas6: 'Parkir Gratis',
-        harga: 'IDR 150.000,-',
-        rating: '4/5',
-        alamat: 'Jl. Raya Cilongok No. 10, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
-    Deklarasi(
-        namaHotel: 'Hotel Surya',
-        deskripsi:
-            'Hotel ini merupakan hotel bintang 3 yang berlokasi di pusat kota Cilongok, dekat dengan Pasar Cilongok dan Stasiun Cilongok. Hotel ini memiliki fasilitas kolam renang, restoran, spa, gym, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'Kolam Renang',
-        fasilitas2: 'Restoran',
-        fasilitas3: 'Spa',
-        fasilitas4: 'Pusat Kebugaran/GYM',
-        fasilitas5: 'Meeting Room',
-        fasilitas6: 'Parkir Gratis',
-        harga: 'IDR 200.000,-',
-        rating: '4.5/5',
-        alamat: 'Jl. Raya Cilongok No. 15, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
-    Deklarasi(
-        namaHotel: 'Green Valley Resort Hotel Baturaden',
-        deskripsi:
-            'Hotel ini merupakan hotel bintang 3 yang berlokasi di kawasan wisata Baturaden, dekat dengan Air Terjun Bidadari dan Telaga Sunyi. Hotel ini memiliki fasilitas kolam renang, restoran, taman bermain anak-anak, Wi-Fi gratis, dan parkir gratis.',
-        fasilitas1: 'Kolam Renang',
-        fasilitas2: 'Restoran',
-        fasilitas3: 'Taman Bermain Anak',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Parkir Gratis',
-        harga: 'IDR 300.000,-',
-        rating: '4/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 18, Baturaden, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
-    Deklarasi(
-        namaHotel: 'Hotel Moroseneng',
-        deskripsi:
-            'Hotel ini adalah hotel bintang 2 yang menawarkan kamar-kamar yang nyaman dan bersih dengan fasilitas AC, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'Restoran',
-        fasilitas2: 'Ruang Rapat',
-        fasilitas3: 'Parkir Gratis',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Kamar Mandi Pribadi',
-        fasilitas6: 'AC',
-        harga: 'IDR 250.000,-',
-        rating: '3.5/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 16, Baturaden, Banyumas.',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
-    Deklarasi(
-        namaHotel: 'Hotel Legen 1',
-        deskripsi:
-            'Hotel ini adalah hotel bintang 1 yang menyediakan kamar-kamar yang sederhana dan terjangkau dengan fasilitas AC atau kipas angin, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi atau bersama dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran dan parkir gratis.',
-        fasilitas1: 'Restoran',
-        fasilitas2: 'Parkir Gratis',
-        fasilitas3: 'AC',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Kamar Mandi Pribadi',
-        harga: 'IDR 150.000,-',
-        rating: '3,9/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 10A, Baturaden, Banyumas.',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Tempat Penginapan'),
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(15.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA PURWOKERTO',
-                style: TextStyle(
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 20.0),
-              ListView.builder(
-                shrinkWrap: true,
-                physics: ScrollPhysics(),
-                itemCount: tempatPenginapanList.length,
-                itemBuilder: (context, index) {
-                  Deklarasi declare = tempatPenginapanList[index];
-                  return Card(
-                    child: ListTile(
-                      title: Text(declare.namaHotel),
-                      subtitle: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('Harga: ${declare.harga}'),
-                          Text('Rating: ${declare.rating}'),
-                          Text('Alamat: ${declare.alamat}'),
-                        ],
-                      ),
-                      trailing: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) =>
-                                  InformasiDetailPage(declare: declare),
-                            ),
-                          );
-                        },
-                        child: Text('Informasi lebih lanjut'),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-// - Gumelar ------------------------------------------------------------------------------------------
-class GumelarPage extends StatefulWidget {
-  @override
-  _GumelarPageState createState() => _GumelarPageState();
-}
-
-class _GumelarPageState extends State<GumelarPage> {
-  List<Deklarasi> tempatPenginapanList = [
-    Deklarasi(
-        namaHotel: 'Hotel Cilongok',
-        deskripsi:
-            'Hotel ini merupakan hotel bintang 1 yang menyediakan kamar-kamar yang sederhana dan terjangkau dengan fasilitas AC atau kipas angin, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi atau bersama dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran dan parkir gratis.',
-        fasilitas1: 'Parkir Gratis',
-        fasilitas2: 'Wi-Fi Gratis',
-        fasilitas3: 'Restoran',
-        fasilitas4: 'Kamar Mandi Pribadi',
-        fasilitas5: 'Kolam Renang',
-        harga: 'IDR 100.000,-',
-        rating: '3.5/5',
-        alamat: 'Jl. Raya Cilongok No. 1, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6',
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
         image: ''),
     Deklarasi(
-        namaHotel: 'Hotel Permata',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini adalah hotel bintang 2 yang menawarkan kamar-kamar yang nyaman dan bersih dengan fasilitas AC, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'AC',
-        fasilitas2: 'Wi-Fi Gratis',
-        fasilitas3: 'Kamar Mandi Pribadi',
-        fasilitas4: 'Restoran',
-        fasilitas5: 'Meeting Room',
-        fasilitas6: 'Parkir Gratis',
-        harga: 'IDR 150.000,-',
-        rating: '4/5',
-        alamat: 'Jl. Raya Cilongok No. 10, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
+        image: ''),
     Deklarasi(
-        namaHotel: 'Hotel Surya',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini merupakan hotel bintang 3 yang berlokasi di pusat kota Cilongok, dekat dengan Pasar Cilongok dan Stasiun Cilongok. Hotel ini memiliki fasilitas kolam renang, restoran, spa, gym, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'Kolam Renang',
-        fasilitas2: 'Restoran',
-        fasilitas3: 'Spa',
-        fasilitas4: 'Pusat Kebugaran/GYM',
-        fasilitas5: 'Meeting Room',
-        fasilitas6: 'Parkir Gratis',
-        harga: 'IDR 200.000,-',
-        rating: '4.5/5',
-        alamat: 'Jl. Raya Cilongok No. 15, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
+        image: ''),
     Deklarasi(
-        namaHotel: 'Green Valley Resort Hotel Baturaden',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini merupakan hotel bintang 3 yang berlokasi di kawasan wisata Baturaden, dekat dengan Air Terjun Bidadari dan Telaga Sunyi. Hotel ini memiliki fasilitas kolam renang, restoran, taman bermain anak-anak, Wi-Fi gratis, dan parkir gratis.',
-        fasilitas1: 'Kolam Renang',
-        fasilitas2: 'Restoran',
-        fasilitas3: 'Taman Bermain Anak',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Parkir Gratis',
-        harga: 'IDR 300.000,-',
-        rating: '4/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 18, Baturaden, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
+        image: ''),
     Deklarasi(
-        namaHotel: 'Hotel Moroseneng',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini adalah hotel bintang 2 yang menawarkan kamar-kamar yang nyaman dan bersih dengan fasilitas AC, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'Restoran',
-        fasilitas2: 'Ruang Rapat',
-        fasilitas3: 'Parkir Gratis',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Kamar Mandi Pribadi',
-        fasilitas6: 'AC',
-        harga: 'IDR 250.000,-',
-        rating: '3.5/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 16, Baturaden, Banyumas.',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
-    Deklarasi(
-        namaHotel: 'Hotel Legen 1',
-        deskripsi:
-            'Hotel ini adalah hotel bintang 1 yang menyediakan kamar-kamar yang sederhana dan terjangkau dengan fasilitas AC atau kipas angin, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi atau bersama dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran dan parkir gratis.',
-        fasilitas1: 'Restoran',
-        fasilitas2: 'Parkir Gratis',
-        fasilitas3: 'AC',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Kamar Mandi Pribadi',
-        harga: 'IDR 150.000,-',
-        rating: '3,9/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 10A, Baturaden, Banyumas.',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
+        image: ''),
   ];
 
   @override
@@ -813,87 +662,103 @@ class AjibarangPage extends StatefulWidget {
 class _AjibarangPageState extends State<AjibarangPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
-        namaHotel: 'Hotel Cilongok',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini merupakan hotel bintang 1 yang menyediakan kamar-kamar yang sederhana dan terjangkau dengan fasilitas AC atau kipas angin, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi atau bersama dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran dan parkir gratis.',
-        fasilitas1: 'Parkir Gratis',
-        fasilitas2: 'Wi-Fi Gratis',
-        fasilitas3: 'Restoran',
-        fasilitas4: 'Kamar Mandi Pribadi',
-        fasilitas5: 'Kolam Renang',
-        harga: 'IDR 100.000,-',
-        rating: '3.5/5',
-        alamat: 'Jl. Raya Cilongok No. 1, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6',
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-', 
         image: ''),
     Deklarasi(
-        namaHotel: 'Hotel Permata',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini adalah hotel bintang 2 yang menawarkan kamar-kamar yang nyaman dan bersih dengan fasilitas AC, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'AC',
-        fasilitas2: 'Wi-Fi Gratis',
-        fasilitas3: 'Kamar Mandi Pribadi',
-        fasilitas4: 'Restoran',
-        fasilitas5: 'Meeting Room',
-        fasilitas6: 'Parkir Gratis',
-        harga: 'IDR 150.000,-',
-        rating: '4/5',
-        alamat: 'Jl. Raya Cilongok No. 10, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-', 
+        link: '-',
+        image: ''),
     Deklarasi(
-        namaHotel: 'Hotel Surya',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini merupakan hotel bintang 3 yang berlokasi di pusat kota Cilongok, dekat dengan Pasar Cilongok dan Stasiun Cilongok. Hotel ini memiliki fasilitas kolam renang, restoran, spa, gym, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'Kolam Renang',
-        fasilitas2: 'Restoran',
-        fasilitas3: 'Spa',
-        fasilitas4: 'Pusat Kebugaran/GYM',
-        fasilitas5: 'Meeting Room',
-        fasilitas6: 'Parkir Gratis',
-        harga: 'IDR 200.000,-',
-        rating: '4.5/5',
-        alamat: 'Jl. Raya Cilongok No. 15, Cilongok, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-', 
+        image: ''),
     Deklarasi(
-        namaHotel: 'Green Valley Resort Hotel Baturaden',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini merupakan hotel bintang 3 yang berlokasi di kawasan wisata Baturaden, dekat dengan Air Terjun Bidadari dan Telaga Sunyi. Hotel ini memiliki fasilitas kolam renang, restoran, taman bermain anak-anak, Wi-Fi gratis, dan parkir gratis.',
-        fasilitas1: 'Kolam Renang',
-        fasilitas2: 'Restoran',
-        fasilitas3: 'Taman Bermain Anak',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Parkir Gratis',
-        harga: 'IDR 300.000,-',
-        rating: '4/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 18, Baturaden, Banyumas',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
+        image: ''),
     Deklarasi(
-        namaHotel: 'Hotel Moroseneng',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini adalah hotel bintang 2 yang menawarkan kamar-kamar yang nyaman dan bersih dengan fasilitas AC, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran, ruang rapat, dan parkir gratis.',
-        fasilitas1: 'Restoran',
-        fasilitas2: 'Ruang Rapat',
-        fasilitas3: 'Parkir Gratis',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Kamar Mandi Pribadi',
-        fasilitas6: 'AC',
-        harga: 'IDR 250.000,-',
-        rating: '3.5/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 16, Baturaden, Banyumas.',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
+        image: ''),
     Deklarasi(
-        namaHotel: 'Hotel Legen 1',
+        namaHotel: '-',
         deskripsi:
-            'Hotel ini adalah hotel bintang 1 yang menyediakan kamar-kamar yang sederhana dan terjangkau dengan fasilitas AC atau kipas angin, TV kabel, Wi-Fi gratis, dan kamar mandi pribadi atau bersama dengan shower air panas dan dingin. Hotel ini juga memiliki fasilitas restoran dan parkir gratis.',
-        fasilitas1: 'Restoran',
-        fasilitas2: 'Parkir Gratis',
-        fasilitas3: 'AC',
-        fasilitas4: 'Wi-Fi Gratis',
-        fasilitas5: 'Kamar Mandi Pribadi',
-        harga: 'IDR 150.000,-',
-        rating: '3,9/5',
-        alamat: 'Jl. Raya Baturaden KM 7 No. 10A, Baturaden, Banyumas.',
-        link: 'https://goo.gl/maps/9wZQm8XzWgq2cY4R6'),
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-',
+        link: '-',
+        image: ''),
+    Deklarasi(
+        namaHotel: '-',
+        deskripsi:
+            '-',
+        fasilitas1: '-',
+        fasilitas2: '-',
+        fasilitas3: '-',
+        fasilitas4: '-',
+        fasilitas5: '-',
+        harga: 'IDR -,-',
+        rating: '-/5',
+        alamat: '-', 
+        link: '-',
+        image: ''),
   ];
 
   @override
@@ -909,7 +774,7 @@ class _AjibarangPageState extends State<AjibarangPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA PURWOKERTO',
+                'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA AJIBARANG',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
@@ -957,7 +822,7 @@ class _AjibarangPageState extends State<AjibarangPage> {
   }
 }
 
-// - Sokaraja -----------------------------------------------------------------------------------------
+// - Sokaraja --DONE!---------------------------------------------------------------------------------------
 class SokarajaPage extends StatefulWidget {
   @override
   _SokarajaPageState createState() => _SokarajaPageState();

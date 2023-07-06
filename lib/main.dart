@@ -355,29 +355,6 @@ class BanyumasPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GumelarPage(),
-                  ),
-                );
-              },
-              child: Text(
-                'Gumelar',
-                style: TextStyle(fontSize: 18.0),
-              ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
-            ),
-            SizedBox(height: 10.0),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
                     builder: (context) => BaturadenPage(),
                   ),
                 );
