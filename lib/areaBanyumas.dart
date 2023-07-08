@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'main.dart';
 
 // - Purwokerto --DONE--------------------------------------------------------------------------------------
@@ -195,7 +196,7 @@ class _PurwokertoPageState extends State<PurwokertoPage> {
   }
 }
 
-// - Kebasen --DONE!-----------------------------------------------------------------------------------------
+// - Kebasen -- DONE! -----------------------------------------------------------------------------------------
 class KebasenPage extends StatefulWidget {
   @override
   _KebasenPageState createState() => _KebasenPageState();
@@ -507,33 +508,36 @@ class CilongokPage extends StatefulWidget {
 class _CilongokPageState extends State<CilongokPage> {
   List<Deklarasi> tempatPenginapanList = [
     Deklarasi(
-        namaHotel: '-',
+        namaHotel: 'Luminor Hotel',
         deskripsi:
-            '-',
-        fasilitas1: '-',
-        fasilitas2: '-',
-        fasilitas3: '-',
-        fasilitas4: '-',
-        fasilitas5: '-',
-        harga: 'IDR -,-',
-        rating: '-/5',
-        alamat: '-',
-        link: '-',
-        image: ''),
+            'Luminor Hotel Purwokerto berjarak 23 km dari Owabong. By WH menawarkan akomodasi bintang 4 di Purwokerto dan memiliki kolam renang luar ruangan, pusat kebugaran, dan restoran. Hotel bintang 4 ini menawarkan layanan kamar, resepsionis 24 jam, dan Wi-Fi gratis. Sarapan harian menawarkan pilihan prasmanan, Asia, atau halal. Gunung Slamet berjarak 44 km dari hotel. Bandara terdekat adalah Bandara Cijulang Nusawiru, 122 km dari Luminor Hotel Purwokerto By WH.',
+        fasilitas1: 'Sarapan Gratis',
+        fasilitas2: 'Parkir Gratis',
+        fasilitas3: 'Wi-Fi Gratis',
+        fasilitas4: 'Kolam Renang Outdoor',
+        fasilitas5: 'Pusat Kebugaran',
+        fasilitas6: 'Pusat Bisnis',
+        fasilitas7: 'Bar',
+        fasilitas8: 'Layanan Kamar',
+        harga: 'IDR 656,500,-',
+        rating: '4/5',
+        alamat: 'Jl. Jend. Soedirman No.324, Purwokerto 53116',
+        link: 'https://goo.gl/maps/tg5ybsdyBHSbhve76',
+        image: 'assets/images/luminor.jpg'),
     Deklarasi(
-        namaHotel: '-',
+        namaHotel: 'Haydenn Inn',
         deskripsi:
-            '-',
-        fasilitas1: '-',
-        fasilitas2: '-',
-        fasilitas3: '-',
-        fasilitas4: '-',
-        fasilitas5: '-',
-        harga: 'IDR -,-',
-        rating: '-/5',
-        alamat: '-',
-        link: '-',
-        image: ''),
+            'Hayden Inn menawarkan akomodasi dengan pusat kebugaran, parkir pribadi gratis, lounge bersama, dan teras di Purwokerto, 20 km dari Owabong. Fasilitas yang ditawarkan di akomodasi ini adalah resepsionis 24 jam, layanan pramutamu, dan Wi-Fi gratis di seluruh areanya. Kamar-kamar di guest house ini dilengkapi dengan meja, TV layar datar, kamar mandi pribadi, seprai, dan handuk. Beberapa unit menampilkan pemandangan kota, dan setiap kamar dilengkapi dengan teko. Semua kamar di akomodasi ini memiliki AC dan lemari.',
+        fasilitas1: 'Parkir Gratis',
+        fasilitas2: 'Wi-Fi Gratis',
+        fasilitas3: 'Parkir Valet',
+        fasilitas4: 'Pusat Kebugaran',
+        fasilitas5: 'Layanan Ruang Serbaguna',
+        harga: 'IDR 202.800,-',
+        rating: '4.2/5',
+        alamat: 'Jl. Gelora Indah I, Gang Baseball/Gang ll No.3, Purwokerto 53114',
+        link: 'https://goo.gl/maps/F5e6eDq1P7YvSa527',
+        image: 'assets/images/haydenn_inn.JPG'),
     Deklarasi(
         namaHotel: '-',
         deskripsi:

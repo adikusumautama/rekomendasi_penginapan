@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^6.0.0
+  google_fonts: ^5.1.0
 
 
 dev_dependencies:
@@ -21,5 +22,18 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/images/java-heritage.jpg
+    - assets/images/atrium-resort-pwt.jpg
+    - assets/images/haydenn_inn.JPG
+    - assets/images/hotel-besar.JPG
+    - assets/images/hotel-budi.jpg
+    - assets/images/hotel-cahaya-nirwana.png
     - assets/images/hotel-mutiara.png
+    - assets/images/java-heritage.jpg
+    - assets/images/kebasen-aston-imperium.png
+    - assets/images/kebasen-hotel-akbar-syariah.png
+    - assets/images/kebasen-hotel-intan.png
+    - assets/images/logo.jpg
+    - assets/images/luminor.jpg
+    - assets/images/palapa_hotel.jpg
+    - assets/images/unnamed.jpg
+    - assets/images/surya_yudha_hotel.jpg
