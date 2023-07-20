@@ -3,6 +3,8 @@ import 'main.dart';
 
 // - Sidareja -----------------------------------------------------------------------------------------
 class SidarejaPage extends StatefulWidget {
+  const SidarejaPage({super.key});
+
 
   @override
   _SidarejaPageState createState() => _SidarejaPageState();
@@ -187,25 +189,25 @@ class _SidarejaPageState extends State<SidarejaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SIDAREJA'),
+        title: const Text('SIDAREJA'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA SIDAREJA',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ListView.builder(
                 shrinkWrap: true,
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 itemCount: tempatPenginapanList.length,
                 itemBuilder: (context, index) {
                   Deklarasi declare = tempatPenginapanList[index];
@@ -230,7 +232,7 @@ class _SidarejaPageState extends State<SidarejaPage> {
                             ),
                           );
                         },
-                        child: Text('Informasi lebih lanjut'),
+                        child: const Text('Informasi lebih lanjut'),
                       ),
                     ),
                   );
@@ -330,25 +332,25 @@ class _MajenangPageState extends State<MajenangPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('KEBASEN'),
+        title: const Text('KEBASEN'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA KEBASEN',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ListView.builder(
                 shrinkWrap: true,
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 itemCount: tempatPenginapanList.length,
                 itemBuilder: (context, index) {
                   Deklarasi declare = tempatPenginapanList[index];
@@ -373,7 +375,7 @@ class _MajenangPageState extends State<MajenangPage> {
                             ),
                           );
                         },
-                        child: Text('Informasi lebih lanjut'),
+                        child: const Text('Informasi lebih lanjut'),
                       ),
                     ),
                   );
@@ -389,6 +391,8 @@ class _MajenangPageState extends State<MajenangPage> {
 
 // - Karang Pucung ------------------------------------------------------------------------------------
 class KarangPucungPage extends StatefulWidget {
+  const KarangPucungPage({super.key});
+
 
   @override
   _KarangPucungPageState createState() => _KarangPucungPageState();
@@ -493,25 +497,25 @@ class _KarangPucungPageState extends State<KarangPucungPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tempat Penginapan'),
+        title: const Text('Tempat Penginapan'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA PURWOKERTO',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ListView.builder(
                 shrinkWrap: true,
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 itemCount: tempatPenginapanList.length,
                 itemBuilder: (context, index) {
                   Deklarasi declare = tempatPenginapanList[index];
@@ -536,7 +540,7 @@ class _KarangPucungPageState extends State<KarangPucungPage> {
                             ),
                           );
                         },
-                        child: Text('Informasi lebih lanjut'),
+                        child: const Text('Informasi lebih lanjut'),
                       ),
                     ),
                   );
@@ -552,6 +556,8 @@ class _KarangPucungPageState extends State<KarangPucungPage> {
 
 // - Kroya --------------------------------------------------------------------------------------------
 class KroyaPage extends StatefulWidget {
+  const KroyaPage({super.key});
+
 
   @override
   _KroyaPageState createState() => _KroyaPageState();
@@ -647,25 +653,25 @@ class _KroyaPageState extends State<KroyaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tempat Penginapan'),
+        title: const Text('Tempat Penginapan'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA PURWOKERTO',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ListView.builder(
                 shrinkWrap: true,
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 itemCount: tempatPenginapanList.length,
                 itemBuilder: (context, index) {
                   Deklarasi declare = tempatPenginapanList[index];
@@ -690,7 +696,7 @@ class _KroyaPageState extends State<KroyaPage> {
                             ),
                           );
                         },
-                        child: Text('Informasi lebih lanjut'),
+                        child: const Text('Informasi lebih lanjut'),
                       ),
                     ),
                   );
@@ -706,6 +712,8 @@ class _KroyaPageState extends State<KroyaPage> {
 
 // - Sampang ------------------------------------------------------------------------------------------
 class SampangPage extends StatefulWidget {
+  const SampangPage({super.key});
+
   @override
   _SampangPageState createState() => _SampangPageState();
 }
@@ -800,25 +808,25 @@ class _SampangPageState extends State<SampangPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SAMPANG'),
+        title: const Text('SAMPANG'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA SAMPANG',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ListView.builder(
                 shrinkWrap: true,
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 itemCount: tempatPenginapanList.length,
                 itemBuilder: (context, index) {
                   Deklarasi declare = tempatPenginapanList[index];
@@ -843,7 +851,7 @@ class _SampangPageState extends State<SampangPage> {
                             ),
                           );
                         },
-                        child: Text('Informasi lebih lanjut'),
+                        child: const Text('Informasi lebih lanjut'),
                       ),
                     ),
                   );
@@ -859,6 +867,8 @@ class _SampangPageState extends State<SampangPage> {
 
 // - Ajibarang ----------------------------------------------------------------------------------------
 class WanarejaPage extends StatefulWidget {
+  const WanarejaPage({super.key});
+
   @override
   _WanarejaPageState createState() => _WanarejaPageState();
 }
@@ -953,25 +963,25 @@ class _WanarejaPageState extends State<WanarejaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('WANAREJA'),
+        title: const Text('WANAREJA'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA WANAREJA',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ListView.builder(
                 shrinkWrap: true,
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 itemCount: tempatPenginapanList.length,
                 itemBuilder: (context, index) {
                   Deklarasi declare = tempatPenginapanList[index];
@@ -996,7 +1006,7 @@ class _WanarejaPageState extends State<WanarejaPage> {
                             ),
                           );
                         },
-                        child: Text('Informasi lebih lanjut'),
+                        child: const Text('Informasi lebih lanjut'),
                       ),
                     ),
                   );
@@ -1012,6 +1022,8 @@ class _WanarejaPageState extends State<WanarejaPage> {
 
 // - Sokaraja -----------------------------------------------------------------------------------------
 class DaerahCilacapPage extends StatefulWidget {
+  const DaerahCilacapPage({super.key});
+
 
   @override
   _DaerahCilacapPageState createState() => _DaerahCilacapPageState();
@@ -1100,25 +1112,25 @@ class _DaerahCilacapPageState extends State<DaerahCilacapPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CILACAP'),
+        title: const Text('CILACAP'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'BERIKUT DAFTAR REKOMENDASI TEMPAT PENGINAPAN AREA CILACAP',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ListView.builder(
                 shrinkWrap: true,
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 itemCount: tempatPenginapanList.length,
                 itemBuilder: (context, index) {
                   Deklarasi declare = tempatPenginapanList[index];
@@ -1143,7 +1155,7 @@ class _DaerahCilacapPageState extends State<DaerahCilacapPage> {
                             ),
                           );
                         },
-                        child: Text('Informasi lebih lanjut'),
+                        child: const Text('Informasi lebih lanjut'),
                       ),
                     ),
                   );

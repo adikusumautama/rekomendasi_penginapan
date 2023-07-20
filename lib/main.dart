@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:rekomendasi_penginapan/areaKebumen.dart';
 import 'package:rekomendasi_penginapan/areaPurbalingga.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:async';
 import 'splashScreen.dart';
 
 import 'areaBanyumas.dart';
 import 'areaCilacap.dart';
 import 'areaBanjarnegara.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,25 +22,27 @@ class MyApp extends StatelessWidget {
         fontFamily: 'OpenSans',
         primarySwatch: Colors.indigo,
       ),
-      home: Splash(),
+      home: const Splash(),
       routes: {
-        '/home': (context) => HomePage(),
-        '/banyumas': (context) => BanyumasPage(),
-        '/purbalingga': (context) => PurbalinggaPage(),
-        '/kebumen': (context) => KebumenPage(),
-        '/cilacap': (context) => CilacapPage(),
-        '/banjarnegara': (context) => BanjarnegaraPage(),
+        '/home': (context) => const HomePage(),
+        '/banyumas': (context) => const BanyumasPage(),
+        '/purbalingga': (context) => const PurbalinggaPage(),
+        '/kebumen': (context) => const KebumenPage(),
+        '/cilacap': (context) => const CilacapPage(),
+        '/banjarnegara': (context) => const BanjarnegaraPage(),
       },
     );
   }
 }
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('REKOMENDASI TEMPAT PENGINAPAN (BARLINGMASCAKEB)'),
+        title: const Text('REKOMENDASI TEMPAT PENGINAPAN (BARLINGMASCAKEB)'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -47,13 +50,13 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Text(
+            const Text(
               'Pilih Lokasi',
               style: TextStyle(fontSize: 24),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 20),
-            Container(
+            const SizedBox(height: 20),
+            SizedBox(
               height: 200,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -68,8 +71,8 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.indigo,
                         ),
-                        padding: EdgeInsets.all(10),
-                        child: Column(
+                        padding: const EdgeInsets.all(10),
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             SizedBox(height: 10),
@@ -86,7 +89,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
@@ -97,8 +100,8 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.indigo,
                         ),
-                        padding: EdgeInsets.all(10),
-                        child: Column(
+                        padding: const EdgeInsets.all(10),
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             SizedBox(height: 10),
@@ -118,8 +121,8 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 10),
-            Container(
+            const SizedBox(height: 10),
+            SizedBox(
               height: 200,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -134,8 +137,8 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.indigo,
                         ),
-                        padding: EdgeInsets.all(10),
-                        child: Column(
+                        padding: const EdgeInsets.all(10),
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             SizedBox(height: 10),
@@ -152,7 +155,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
@@ -163,8 +166,8 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.indigo,
                         ),
-                        padding: EdgeInsets.all(10),
-                        child: Column(
+                        padding: const EdgeInsets.all(10),
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             SizedBox(height: 10),
@@ -181,7 +184,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
@@ -192,8 +195,8 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.indigo,
                         ),
-                        padding: EdgeInsets.all(10),
-                        child: Column(
+                        padding: const EdgeInsets.all(10),
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             SizedBox(height: 10),
@@ -224,152 +227,142 @@ class HomePage extends StatelessWidget {
 
 // -------------------------------------------------------------------------
 class BanyumasPage extends StatelessWidget {
+  const BanyumasPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Banyumas Page'),
+        title: const Text('Banyumas Page'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: ListView(
           children: [
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PurwokertoPage(),
+                    builder: (context) => const PurwokertoPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Purwokerto',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => AjibarangPage(),
+                    builder: (context) => const AjibarangPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Ajibarang',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KebasenPage(),
+                    builder: (context) => const KebasenPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Kebasen',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SokarajaPage(),
+                    builder: (context) => const SokarajaPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Sokaraja',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => CilongokPage(),
+                    builder: (context) => const CilongokPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Cilongok',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => BaturadenPage(),
+                    builder: (context) => const BaturadenPage(),
                   ),
                 );
               },
-              child: Text(
-                'Baturaden',
-                style: TextStyle(fontSize: 18.0),
-              ),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
+              ),
+              child: const Text(
+                'Baturaden',
+                style: TextStyle(fontSize: 18.0),
               ),
             ),
           ],
@@ -381,175 +374,163 @@ class BanyumasPage extends StatelessWidget {
 
 // -------------------------------------------------------------------------
 class BanjarnegaraPage extends StatelessWidget {
+  const BanjarnegaraPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Banjarnegara Page'),
+        title: const Text('Banjarnegara Page'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: ListView(
           children: [
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DaerahBanjarnegaraPage(),
+                    builder: (context) => const DaerahBanjarnegaraPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Banjarnegara',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PurwanegaraPage(),
+                    builder: (context) => const PurwanegaraPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Purwanegara',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Banjarmangu(),
+                    builder: (context) => const Banjarmangu(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Banjarmangu',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => BaturPage(),
+                    builder: (context) => const BaturPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Batur',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KalibeningPage(),
+                    builder: (context) => const KalibeningPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Kalibening',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MandirajaPage(),
+                    builder: (context) => const MandirajaPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Mandiraja',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => WanayasaPage(),
+                    builder: (context) => const WanayasaPage(),
                   ),
                 );
               },
-              child: Text(
-                'Wanayasa',
-                style: TextStyle(fontSize: 18.0),
-              ),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
+              ),
+              child: const Text(
+                'Wanayasa',
+                style: TextStyle(fontSize: 18.0),
               ),
             ),
           ],
@@ -561,129 +542,121 @@ class BanjarnegaraPage extends StatelessWidget {
 
 // -------------------------------------------------------------------------
 class KebumenPage extends StatelessWidget {
+  const KebumenPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Kebumen Page'),
+        title: const Text('Kebumen Page'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: ListView(
           children: [
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DaerahKebumenPage(),
+                    builder: (context) => const DaerahKebumenPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Daerah Kebumen',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GombongPage(),
+                    builder: (context) => const GombongPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Gombong',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KaranganyarPage(),
+                    builder: (context) => const KaranganyarPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Karanganyar',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KarangsambungPage(),
+                    builder: (context) => const KarangsambungPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Karangsambung',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KutowinangunPage(),
+                    builder: (context) => const KutowinangunPage(),
                   ),
                 );
               },
-              child: Text(
-                'Kutowinangun',
-                style: TextStyle(fontSize: 18.0),
-              ),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
+              ),
+              child: const Text(
+                'Kutowinangun',
+                style: TextStyle(fontSize: 18.0),
               ),
             ),
           ],
@@ -695,175 +668,163 @@ class KebumenPage extends StatelessWidget {
 
 // -------------------------------------------------------------------------
 class CilacapPage extends StatelessWidget {
+  const CilacapPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cilacap Page'),
+        title: const Text('Cilacap Page'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: ListView(
           children: [
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DaerahCilacapPage(),
+                    builder: (context) => const DaerahCilacapPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Cilacap',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SidarejaPage(),
+                    builder: (context) => const SidarejaPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Sidareja',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MajenangPage(),
+                    builder: (context) => const MajenangPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Majenang',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KarangPucungPage(),
+                    builder: (context) => const KarangPucungPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Karang Pucung',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KroyaPage(),
+                    builder: (context) => const KroyaPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Kroya',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SampangPage(),
+                    builder: (context) => const SampangPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Sampang',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => WanarejaPage(),
+                    builder: (context) => const WanarejaPage(),
                   ),
                 );
               },
-              child: Text(
-                'Wanareja',
-                style: TextStyle(fontSize: 18.0),
-              ),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
+              ),
+              child: const Text(
+                'Wanareja',
+                style: TextStyle(fontSize: 18.0),
               ),
             ),
           ],
@@ -875,129 +836,121 @@ class CilacapPage extends StatelessWidget {
 
 // -------------------------------------------------------------------------
 class PurbalinggaPage extends StatelessWidget {
+  const PurbalinggaPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cilacap Page'),
+        title: const Text('Cilacap Page'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: ListView(
           children: [
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DaerahPurbalinggaPage(),
+                    builder: (context) => const DaerahPurbalinggaPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Purbalingga Kota',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => BojongsariPage(),
+                    builder: (context) => const BojongsariPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Bojongsari',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KarangrejaPage(),
+                    builder: (context) => const KarangrejaPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Karangreja',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => BukatejaPage(),
+                    builder: (context) => const BukatejaPage(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text(
                 'Bukateja',
                 style: TextStyle(fontSize: 18.0),
               ),
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KaligondangPage(),
+                    builder: (context) => const KaligondangPage(),
                   ),
                 );
               },
-              child: Text(
-                'Kaligondang',
-                style: TextStyle(fontSize: 18.0),
-              ),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15.0),
-                primary: Color.fromARGB(255, 229, 229, 229),
-                onPrimary: Colors.indigo,
+                foregroundColor: Colors.indigo, backgroundColor: const Color.fromARGB(255, 229, 229, 229), padding: const EdgeInsets.all(15.0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
+              ),
+              child: const Text(
+                'Kaligondang',
+                style: TextStyle(fontSize: 18.0),
               ),
             ),
           ],
@@ -1050,19 +1003,19 @@ class Deklarasi {
 class InformasiDetailPage extends StatelessWidget {
   final Deklarasi declare;
 
-  InformasiDetailPage({required this.declare});
+  const InformasiDetailPage({super.key, required this.declare});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Informasi Detail'),
+        title: const Text('Informasi Detail'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: ListView(
           children: [
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8.0),
@@ -1078,26 +1031,26 @@ class InformasiDetailPage extends StatelessWidget {
                 top: 15.0,
               ),
               child: Text(
-                '${declare.namaHotel}',
-                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                declare.namaHotel,
+                style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Text(
-              '${declare.deskripsi}',
-              style: TextStyle(fontSize: 15.0),
+              declare.deskripsi,
+              style: const TextStyle(fontSize: 15.0),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8.0),
-                color: Color.fromARGB(255, 229, 229, 229),
+                color: const Color.fromARGB(255, 229, 229, 229),
               ),
-              padding: EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(15.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Icon(
                         Icons.attach_money,
@@ -1113,12 +1066,12 @@ class InformasiDetailPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   Text(
-                    '${declare.harga}',
-                    style: TextStyle(fontSize: 15.0),
+                    declare.harga,
+                    style: const TextStyle(fontSize: 15.0),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Column(
@@ -1142,8 +1095,8 @@ class InformasiDetailPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20.0),
-                  Row(
+                  const SizedBox(height: 20.0),
+                  const Row(
                     children: [
                       Icon(Icons.hotel),
                       SizedBox(width: 10.0),
@@ -1156,89 +1109,89 @@ class InformasiDetailPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   if (declare.fasilitas1 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas1}'),
                       ],
                     ),
                   if (declare.fasilitas2 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas2}'),
                       ],
                     ),
                   if (declare.fasilitas3 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas3}'),
                       ],
                     ),
                   if (declare.fasilitas4 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas4}'),
                       ],
                     ),
                   if (declare.fasilitas5 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas5}'),
                       ],
                     ),
                   if (declare.fasilitas6 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas6}'),
                       ],
                     ),
                   if (declare.fasilitas7 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas7}'),
                       ],
                     ),
                   if (declare.fasilitas8 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas8}'),
                       ],
                     ),
                   if (declare.fasilitas9 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas9}'),
                       ],
                     ),
                   if (declare.fasilitas10 != null)
                     Row(
                       children: [
-                        Icon(Icons.check),
-                        SizedBox(width: 5.0),
+                        const Icon(Icons.check),
+                        const SizedBox(width: 5.0),
                         Text('${declare.fasilitas10}'),
                       ],
                     ),
-                  SizedBox(height: 20.0),
-                  Row(
+                  const SizedBox(height: 20.0),
+                  const Row(
                     children: [
                       Icon(
                         Icons.location_on,
@@ -1254,17 +1207,17 @@ class InformasiDetailPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   Text(
-                    '${declare.alamat}',
-                    style: TextStyle(fontSize: 15.0),
+                    declare.alamat,
+                    style: const TextStyle(fontSize: 15.0),
                   ),
-                  SizedBox(height: 20.0),
+                  const SizedBox(height: 20.0),
                   ElevatedButton(
                     onPressed: () {
-                      launch('${declare.link}');
+                      launch(declare.link);
                     },
-                    child: Text('Lokasi'),
+                    child: const Text('Lokasi'),
                   ),
                 ],
               ),

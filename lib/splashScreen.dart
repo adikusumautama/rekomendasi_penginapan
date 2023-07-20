@@ -3,6 +3,8 @@ import 'main.dart';
 import 'dart:async';
 
 class Splash extends StatefulWidget {
+  const Splash({super.key});
+
   @override
   _SplashState createState() => _SplashState();
 }
@@ -16,7 +18,7 @@ class _SplashState extends State<Splash> {
 
   startTimer() async {
     var duration =
-        Duration(seconds: 2); // Ubah durasi sesuai kebutuhan (dalam detik)
+        const Duration(seconds: 2); // Ubah durasi sesuai kebutuhan (dalam detik)
     return Timer(duration, route);
   }
 
@@ -25,7 +27,7 @@ class _SplashState extends State<Splash> {
       context,
       MaterialPageRoute(
           builder: (context) =>
-              HomePage()), // Ganti dengan halaman berikutnya setelah splash screen
+              const HomePage()), // Ganti dengan halaman berikutnya setelah splash screen
     );
   }
 
